@@ -3,40 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV Vengura Siarhej</title>
+  <title>CV</title>
   <link rel="icon" href="/image/icons8-попай.svg" sizes="32x32">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-  <div class="container">
-    <header>
-      <nav class="nav">
-        <ul class="nav-list">
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-        </ul>
-      </nav>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <ul class="heder-nav-list list-reset">
+            <li class="nav-list-item">
+              <a href="#about" class="nav-item-linl">
+                About
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#education" class="nav-item-linl">
+                Education
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#work-experience" class="nav-item-linl">
+                Work experience
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#skills" class="nav-item-linl">
+                Skills
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#code" class="nav-item-linl">
+                Code
+              </a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#contacts" class="nav-item-linl">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main>
-      <img class="section-profile-logo" src="/image/photo.jpg" alt="photo" >
-    </main>
-    <footer>
+    <main class="main">
+      <section id="hero" class="hero">
+        <div class="container">
+          <div class="hero-photo">
+            <img src="./image/photo.jpg" alt="photo">
+          </div>
+          <div class="hero-name-descr">
+            <h1>Venhura Siarhej</h1>
+            <p>Trainee Frontend Developer</p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus ratione odio in! Labore nisi impedit officiis ipsa nesciunt minima in ut illum blanditiis eius? Expedita facere enim veritatis reprehenderit sapiente.</p>
+        </div>
+      </section>
+      <section id="education" class="education">
+        <div class="container">
+          <h2 class="section-title">Education</h2>
+          <ul class="education-list">
+            <li class="education-list-item">
+              SUKHOI STATE TECHNICAL UNIVERSITY OF GOMEL - Electronics engineer
+            </li>
+            <li class="education-list-item">
+              Festo.by - Programming Plc "Siemens S1200/1500"
+            </li>
+            <li class="education-list-item">
+              Belhard.by - C# Beginners
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="work-experience" class="work-experience">
+        <div class="container">
+          <h2 class="section-title">Work experience</h2>
+          <ul class="work-experience-list">
+            <li class="work-experience-list-item">
+              2009-2011 &#8211 Energy Engineer
+            </li>
+            <li class="work-experience-list-item">
+              2011-now &#8211 Chief Power Engineer
+            </li>
+        </ul>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="section-title">Skills</h2>
+          <ul class="skills-list">
+            <li class="skills-item-list">
+              HTML - First level
+            </li>
+            <li class="skills-item-list">
+              CSS - First level
+            </li>
+            <li class="skills-item-list">
+              Git
+            </li>
+            <li class="skills-item-list">
+              .Net C# - First Level
+            </li>
+            <li class="skills-item-list">
+              SQL - First Level
+            </li>
+            <li class="skills-item-list">
+              <p>PLC programming languages IEC 61131-3:</p>
+              <ul>
+                <li>LAD</li>
+                <li>STL</li>
+                <li>FBD</li>
+              </ul>
+            </li>
+            <li class="skills-item-list">
+              WinCC SCADA System (C scrypting)
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="code" class="code">
+        <div class="container">
+          <h2 class="section-title">Code</h2>
+          <pre>
+            <code>
+        static void Main(string[] args)
+        {
+            Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+            ShowWindow(ThisConsole, MAXIMIZE);
 
+            int c = 1;
+
+            Console.Write("Введите количество строк: ");
+            var nunberRow = int.Parse(Console.ReadLine());
+            for (var i = 0; i &lt; nunberRow; i++)
+            {
+                for (var emptyCell = 1; emptyCell &lt;= nunberRow - i; emptyCell++)
+                    Console.Write($"{"",4}");
+
+                for (var j = 0; j &lt;= i; j++)
+                {
+                    if (j == 0 || i == 0)
+                        c = 1;
+                    else
+                        c = c * (i - j + 1) / j;
+                    Console.Write($"{c,8}");
+                    //Console.Write(c &gt;= 100 ? (" ") : c &gt;= 10 ? ("  ") : ("   "));
+                }
+                Console.Write("\n");
+            }
+            Console.ReadKey();
+        }
+            </code>
+          </pre>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts">
+        <div class="container">
+          <h2 class="section-title">Contacts</h2>
+          <ul class="contacts-list">
+            <li class="contacts-list-item">
+              <a href="mailto:venguraserg@mail.ru">e-mail: venguraserg@mail.ru</a>
+            </li>
+            <li class="contacts-list-item">
+              <a href="tel:+375445423896">tel.: +375445423896</a>
+            </li>
+            <li class="contacts-list-item">
+              Belarus, Gomel region Zhitkovichi
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-list-item">
+              <a class="github-link" href="https://github.com/venguraserg">github</a>
+            </li>
+            <li class="footer-nav-list-item">
+              <span class="footer-yahr">2023</span>
+            </li>
+            <li class="footer-nav-list-item">
+              <a class="rs_school-link" href="https://rs.school/js/">rs link</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </footer>
-  </div>
-</body>
+  </body>
 </html>
