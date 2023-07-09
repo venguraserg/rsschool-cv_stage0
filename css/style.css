@@ -77,7 +77,7 @@ h1{
   padding: 30px 0px;
   /*background-image:url(/image/hero_background_image.jpg);*/
   background: linear-gradient(to bottom, #a9adc5, #d2d8fa);
-  background-size: no-repeat;
+  background-size:auto;
   background-position: center;
   /*opacity: 0.5;*/
   background-size: contain;
