@@ -19,7 +19,7 @@ img {
 
 body {
   min-width: 1200px;
-	font-family: 'font', sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 
 .list-reset{
@@ -40,34 +40,49 @@ body {
 }
 .section-title{
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
 }
 
 .section-offset{
-  padding-top: 20px;
-  padding-bottom: 60px;
+  padding-top: 0;
+  padding-bottom: 30px;
 }
 
+h1{
+  margin: 0;
+  margin-bottom: 20px;
+}
 
 
 /*header*/
 .header{
-  padding: 20px 0;
-  background-color: cornflowerblue;
+  padding: 20px;
+  background-color: #a9adc5;
 }
 
 .heder-nav-list{
-  position:relative;
-  float: right;
-
+  justify-content:space-between;
+  align-items:flex-end;
 }
 .nav-list-item:not(:last-child){
   margin-right: 50px;
+}
+.nav-list-item{
+  font-size: 24px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /*hero*/
 .hero{
   padding: 30px 0px;
+  /*background-image:url(/image/hero_background_image.jpg);*/
+  background: linear-gradient(to bottom, #a9adc5, #d2d8fa);
+  background-size: no-repeat;
+  background-position: center;
+  /*opacity: 0.5;*/
+  background-size: contain;
+  /*height: 400px;*/
+  /*width: 400px;*/
 }
 .hero-photo-img{
   width: 400px;
@@ -79,8 +94,42 @@ body {
   transition: .3s;
 }
 .hero-container{
-  justify-content: space-around;
+  justify-content:space-between;
   align-items: center;
 }
+.hero-name-descr{
+  font-family: Helvetica, Arial, sans-serif;
+}
+.hero-status{
+  margin: 0;
+  margin-bottom:15px;
+}
+.contacts-list-item{
+  margin-bottom: 5px;
+}
+/*main*/
 
+.main{
+  background: linear-gradient(to bottom, #d2d8fa, #ffffff);
+}
+/*footer*/
+
+.footer-nav-list{
+  justify-content:space-between;
+  align-items: center;
+}
+.footer-nav-list-item:not(:last-child){
+  margin-right: 50px;
+
+}
+.github-logo{
+  width: 70px;
+}
+.footer-yahr{
+  font-size: 32px;
+  font-weight: bold;
+}
+.rsslogo {
+  width: 120px;
+}
 
